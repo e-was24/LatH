@@ -1,0 +1,81 @@
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk</title>
+</head>
+<script>
+    function popup() {
+        alert("Pesanan di terima, tekan 'OK' untuk kembali");
+        window.location = "../1.index.html"
+    }
+</script>
+
+<body>
+    <div class="img" id="img">
+        <img src="../pic/milk.png" alt="" srcset="" class="imgC">
+        <img src="../pic/drop milk.png" alt="" srcset="" class="imgC1">
+    </div>
+    <input type="button" value="PESAN" onclick="popup()" class="btnp">
+</body>
+<style>
+    html {
+        background-color: wheat;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .imgC {
+        font-size: 100px;
+        transform: translateX(100%) translateY(-35%);
+        rotate: 30deg;
+        z-index: 1;
+        filter: contrast(40%);
+    }
+
+    .imgC:hover {
+        filter: drop-shadow(2px 2px 4px white) contrast(100%);
+
+    }
+
+    .imgC1 {
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+        transform: translateX(-40%);
+        width: 25%;
+        filter: drop-shadow(2px 2px 4px black) contrast(40%);
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .btnp {
+        margin-left: 39%;
+        margin-top: 2%;
+        width: 23%;
+        height: 10%;
+        background-color: blue;
+        color: white;
+        border-color: white;
+        font-size: 25px;
+        font-family: cursive;
+        transition: ease-in-out .4s;
+        transition-delay: .2s;
+    }
+
+    .btnp:hover {
+        transition: ease-in-out .4s;
+        transition-delay: .2s;
+        background-color: white;
+        border-color: blue;
+        color: blue;
+    }
+</style>
+
+</html>
